@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:MauiApp1.Model"
+             x:Class="MauiApp1.MainPage"
+             x:DataType="model:Profile"
+             BackgroundColor="Grey">
+
+
+
+    <VerticalStackLayout>
+        <Label>bruh</Label>
+        <FlexLayout x:Name="daysLabels" MaximumWidthRequest="210" Margin="0,50,0,0" Wrap="Wrap"/>
+        <FlexLayout x:Name="flexLayout" HeightRequest="150" WidthRequest="210" Margin="0" Wrap="Wrap"></FlexLayout>
+
+        <Label x:Name="StreakLabel" HorizontalOptions="Center" FontSize="24" TextColor="Black" FontAttributes="Bold"></Label>
+
+        <Label x:Name="LastWorkoutDuration" HorizontalOptions="Center" FontSize="24" TextColor="Black" FontAttributes="Bold"></Label>
+
+        <Button Margin="500, 0" Clicked="ClockedIn"  Text="▶️"></Button>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button Clicked="Present_Clicked"  Text="Went To Gym"></Button>
+            <Button Clicked="RestDay_Clicked" Text="Rest Day"></Button>
+            <Button Clicked="Present_Absent" Text="Didn't go"></Button>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+
+
+</ContentPage>
+
+
+<!--TODO KEEP-->
+<!--<CollectionView>
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type model:Activity}">
+                    <model:Activity
+                        ActivityState="PRESENT"
+                        Date="2022-05-13">
+                    </model:Activity>
+                </x:Array>
+            </CollectionView.ItemsSource>
+        </CollectionView>-->
