@@ -13,6 +13,8 @@
         <FlexLayout x:Name="daysLabels" MaximumWidthRequest="210" Margin="0,50,0,0" Wrap="Wrap"/>
         <FlexLayout x:Name="flexLayout" HeightRequest="150" WidthRequest="210" Margin="0" Wrap="Wrap"></FlexLayout>
 
+        
+        
         <Label x:Name="StreakLabel" HorizontalOptions="Center" FontSize="24" TextColor="Black" FontAttributes="Bold"></Label>
 
         <Label x:Name="LastWorkoutDuration" HorizontalOptions="Center" FontSize="24" TextColor="Black" FontAttributes="Bold"></Label>
